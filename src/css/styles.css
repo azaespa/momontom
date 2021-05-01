@@ -52,6 +52,7 @@ h1 {
 
 h4 {
     font-size: 2em;
+    font-weight: 300;
 }
 
 input {
@@ -136,8 +137,30 @@ h4 {
     justify-content: center;
 }
 
+.toDoContainer {
+    box-sizing: border-box;
+    height: 12em;
+    width: 16em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.toDoContainer:hover {
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
 .right-side .toDoForm input{
     font-size: .9em;
+}
+
+.right-side .toDoListContainer {
+    margin-bottom: 1em;
+    height: 9em;
+    overflow-y: hidden;
+}
+
+.right-side .toDoListContainer:hover {
+    overflow-y: scroll;
 }
 
 .right-side .toDoListContainer .toDoList {
@@ -169,11 +192,17 @@ h4 {
     .split {
         flex-direction: row;
         justify-content: center;
+        flex-basis: 90%;
     }
     .right-side .toDoForm input{
         font-size: 1.1em;
     }
     
+    .right-side .toDoListContainer {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(80, 80, 80, 0.5) rgb(0,0,0,0);
+    }
+
     .right-side .toDoListContainer .toDoList {
         font-size: 1.1em;
     }    
@@ -190,8 +219,17 @@ h4 {
         font-size: 1.4em;
     }
     
+    .right-side .toDoContainer {
+        height: 15em;
+        width: 19em;
+    }
+
+    .right-side .toDoListContainer {
+        height: 11em;
+    }
+
     .right-side .toDoListContainer .toDoList {
         font-size: 1.4em;
-    }    
+    }
 }
 
