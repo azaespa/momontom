@@ -97,6 +97,70 @@ button:hover {
     cursor: pointer;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > * {
+    padding: 0 1em;
+}
+
+.toDoToggle {
+    font-size: 1em;
+    animation: toggleBackToDefault .25s ease-in forwards;
+}
+
+.toDoToggle:hover {
+    animation: toggleSlideLeft .25s ease-in forwards;
+}
+
+@keyframes toggleSlideLeft {
+    from {
+        padding-right: 1em;
+    }
+    to {
+        padding-right: 1.5em;
+    }
+}
+
+@keyframes toggleBackToDefault {
+    from {
+        padding-right: 1.5em;
+    }
+    to {
+        padding-right: 1em;
+    }
+}
+
+.weather {
+    flex: 3;
+    color: white;
+    animation: weatherBackToDefault .25s ease-in forwards;
+}
+
+.weather:hover {
+    animation: weatherSlideRight .25s ease-in forwards;
+}
+
+@keyframes weatherSlideRight {
+    from {
+        padding-left: 1em;
+    }
+    to {
+        padding-left: 1.5em;
+    }
+}
+
+@keyframes weatherBackToDefault {
+    from {
+        padding-left: 1.5em;
+    }
+    to {
+        padding-left: 1em;
+    }
+}
+
 .inputNameForm,
 .greetings,
 .chunkDownToDoList,
@@ -106,11 +170,6 @@ button:hover {
 
 .showing {
     display: block;
-}
-
-header {
-    display: flex;
-    color: white;
 }
 
 .content {
@@ -202,9 +261,6 @@ h4 {
     }
     h4 {
         font-size: 3em;
-    }
-    header {
-        flex-direction: row;
     }
     .split {
         flex-direction: row;
