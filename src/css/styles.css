@@ -86,6 +86,8 @@ ul {
 }
 
 button {
+    box-sizing: border-box;
+    padding: 0;
     background: transparent;
     border-style: none;
     color: white;
@@ -168,6 +170,8 @@ h4 {
 }
 
 .right-side .toDoListContainer {
+    box-sizing: border-box;
+    padding-left: .25em;
     margin-bottom: 1em;
     height: 9em;
     overflow-y: scroll;
@@ -177,6 +181,8 @@ h4 {
     padding-left: 0;
     text-align: left;
     font-size: .9em;
+    margin-top: .5em;
+    margin-bottom: 0;
 }
 
 
@@ -205,7 +211,7 @@ h4 {
         flex-basis: 90%;
     }
     .right-side .toDoContainer {
-        height: 12.5em;
+        height: 13em;
         width: 17em;
     }
     .right-side .toDoForm input{
@@ -240,6 +246,7 @@ h4 {
 
     .right-side .toDoListContainer {
         height: 11em;
+        padding-left: .5em;
     }
 
     .right-side .toDoListContainer .toDoList {
