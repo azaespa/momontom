@@ -193,6 +193,11 @@ footer > * {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
+
+.inputNameForm {
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -262,6 +267,9 @@ h4 {
     h4 {
         font-size: 3em;
     }
+    .inputNameForm input{
+        font-size: 1em;
+    }
     .split {
         flex-direction: row;
         justify-content: center;
@@ -291,6 +299,9 @@ h4 {
     }
     h4 {
         font-size: 4em;
+    }
+    .inputNameForm input{
+        font-size: 1.5em;
     }
     .right-side .toDoForm input{
         font-size: 1.4em;
